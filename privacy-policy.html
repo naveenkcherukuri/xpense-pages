@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Xpense</title>
+    <meta name="description" content="Privacy Policy for Xpense - Learn how we collect, use, and protect your personal and financial data.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f9fafb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        body.dark-mode {
+            background: #111827;
+            color: #f9fafb;
+        }
+        .standalone-header {
+            background: white;
+            padding: 24px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        body.dark-mode .standalone-header {
+            background: #1f2937;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-img {
+            width: 40px;
+            height: 40px;
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #8B1538;
+        }
+        .theme-toggle {
+            background: transparent;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 8px 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        body.dark-mode .theme-toggle {
+            border-color: #374151;
+        }
+        .theme-toggle:hover {
+            background: #f3f4f6;
+        }
+        body.dark-mode .theme-toggle:hover {
+            background: #374151;
+        }
+        .sun-icon {
+            display: block;
+            color: #f59e0b;
+        }
+        body.dark-mode .sun-icon {
+            display: none;
+        }
+        .moon-icon {
+            display: none;
+            color: #60a5fa;
+        }
+        body.dark-mode .moon-icon {
+            display: block;
+        }
+        .legal-container {
+            max-width: 900px;
+            margin: 60px auto 60px;
+            padding: 0 24px;
+        }
+        .legal-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .legal-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #8B1538;
+        }
+        .legal-updated {
+            font-size: 16px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .legal-content {
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            line-height: 1.8;
+        }
+        body.dark-mode .legal-content {
+            background: #1f2937;
+        }
+        .legal-section {
+            margin-bottom: 32px;
+        }
+        .legal-section h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1f2937;
+        }
+        body.dark-mode .legal-section h2 {
+            color: #f9fafb;
+        }
+        .legal-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            margin-top: 24px;
+            color: #374151;
+        }
+        body.dark-mode .legal-section h3 {
+            color: #e5e7eb;
+        }
+        .legal-section p {
+            color: #4b5563;
+            margin-bottom: 16px;
+        }
+        body.dark-mode .legal-section p {
+            color: #d1d5db;
+        }
+        .legal-list {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        .legal-list li {
+            color: #4b5563;
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+        body.dark-mode .legal-list li {
+            color: #d1d5db;
+        }
+        .legal-highlight {
+            background: #f3f4f6;
+            border-left: 4px solid #8B1538;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin: 24px 0;
+        }
+        body.dark-mode .legal-highlight {
+            background: #374151;
+        }
+        .contact-box {
+            background: #8B1538;
+            color: white;
+            padding: 32px;
+            border-radius: 16px;
+            margin: 32px 0;
+        }
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 16px;
+        }
+        .contact-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Standalone Header with Logo -->
+    <header class="standalone-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/xpense.png" alt="Xpense" class="logo-img">
+                <span class="logo-text">Xpense</span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="legal-container">
+        
+        <div class="legal-header">
+            <h1 class="legal-title">Privacy Policy</h1>
+            <p class="legal-updated">Version 1.0 | Last Updated: October 10, 2025</p>
+        </div>
+
+        <div class="legal-content">
+            <div class="legal-highlight">
+                <p><strong>🔒 IMPORTANT: Xpense is a 100% LOCAL app</strong></p>
+                <p>ALL your data is stored ONLY on your device. We do NOT have any servers storing your data. Optional backups are stored in YOUR OWN Google Drive account, never on our servers.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>Introduction</h2>
+                <p>Xpense ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we handle your information when you use our mobile application. IMPORTANT: Xpense is a 100% LOCAL app. ALL your data is stored ONLY on your device. We do NOT have any servers storing your data. Optional backups are stored in YOUR OWN Google Drive account, never on our servers.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>1. Information We Collect</h2>
+                <p>We collect information that you provide directly to us and information automatically collected when you use our app.</p>
+                
+                <h3>1.1 Personal Information</h3>
+                <ul class="legal-list">
+                    <li><strong>Google Sign-in:</strong> Used ONLY to access YOUR Google Drive for optional backups (we do NOT store your email, name, or any Google account data on our servers)</li>
+                    <li><strong>Biometric Data:</strong> Face Recognition (Face ID) or Fingerprint data stored locally on your device for app security (never leaves your device)</li>
+                </ul>
+
+                <h3>1.2 Financial Data (Stored ONLY on Your Device)</h3>
+                <ul class="legal-list">
+                    <li><strong>Transaction Information:</strong> Amounts, dates, categories, notes, descriptions, attachments (photos/receipts)</li>
+                    <li><strong>Account Information:</strong> Account names, types, balances, bank names, card networks, account numbers (encrypted locally)</li>
+                    <li><strong>Budget Information:</strong> Budget limits, categories, periods (monthly/quarterly/yearly), alert thresholds (50-95%)</li>
+                    <li><strong>Category & Tag System:</strong> Custom categories, tags, icons, and color coding for organization</li>
+                    <li><strong>Vendor Information:</strong> Merchant names, contact details, transaction history</li>
+                    <li><strong>Recurring Transactions:</strong> Recurring rules, payment schedules, reminder settings (daily/weekly/monthly/yearly)</li>
+                    <li><strong>Custom Fields:</strong> User-defined transaction fields with validation rules</li>
+                </ul>
+
+                <h3>1.3 Usage Data (Optional Anonymous Analytics)</h3>
+                <ul class="legal-list">
+                    <li><strong>App Usage:</strong> Features used, screens visited, interaction patterns (NO financial data)</li>
+                    <li><strong>Device Information:</strong> Device type, operating system version, app version, platform (iOS/Android)</li>
+                    <li><strong>Analytics Data:</strong> Anonymous usage statistics via Firebase Analytics (ONLY with your explicit consent)</li>
+                    <li><strong>Performance Monitoring:</strong> App performance metrics, loading times (NO personal data)</li>
+                    <li><strong>Error Logs:</strong> Application errors for debugging (NO financial or personal data included)</li>
+                </ul>
+
+                <h3>1.4 Media and Files (Stored Locally)</h3>
+                <ul class="legal-list">
+                    <li><strong>Receipt Photos:</strong> Images captured or selected for transaction documentation (stored locally)</li>
+                    <li><strong>Document Attachments:</strong> PDFs, images attached to transactions (stored on your device)</li>
+                    <li><strong>Camera Access:</strong> Used only when you take photos for receipts (NOT accessed without permission)</li>
+                    <li><strong>Storage Access:</strong> Used only for importing/exporting transaction data (CSV, Excel, PDF formats)</li>
+                    <li><strong>Export Files:</strong> Transaction reports, budget summaries you generate for backup</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>2. How We Use Your Information</h2>
+                <p>We use the collected information for the following purposes (<strong>ALL PROCESSING HAPPENS LOCALLY ON YOUR DEVICE</strong>):</p>
+                <ul class="legal-list">
+                    <li><strong>Core Financial Management:</strong> Track expenses, income, budgets, accounts, categories, vendors, tags - all processed locally on your device</li>
+                    <li><strong>Smart Budgeting:</strong> Calculate budget progress, spending trends, category breakdowns with alerts at 50-95% thresholds (local processing)</li>
+                    <li><strong>Transaction Management:</strong> Store and organize transactions with custom fields, tags, attachments, recurring rules (local database)</li>
+                    <li><strong>Local AI Assistant (XpenseAI):</strong> Provide financial insights using Gemma AI models running entirely on your device - your data NEVER leaves your device</li>
+                    <li><strong>Reports & Analytics:</strong> Generate monthly/yearly spending reports, category breakdowns, vendor analysis (all calculated locally)</li>
+                    <li><strong>Smart Notifications:</strong> Send budget alerts, bill reminders, recurring transaction notifications based on your data (processed locally)</li>
+                    <li><strong>Biometric Security:</strong> Protect app access with Face ID/Touch ID (biometric data stored only in device secure enclave, never transmitted)</li>
+                    <li><strong>Optional Google Drive Backup:</strong> Encrypt and backup your data to YOUR OWN Google Drive if you enable this feature</li>
+                    <li><strong>Anonymous App Analytics:</strong> Only if you consent, basic feature usage statistics (NO financial data) sent to Firebase Analytics</li>
+                    <li><strong>Customer Support:</strong> Respond to your inquiries via email (we have NO access to your app data)</li>
+                    <li><strong>Legal Compliance:</strong> Comply with applicable laws and regulations</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>3. Data Storage and Security</h2>
+                <p>We implement industry-standard security measures to protect your data:</p>
+                <ul class="legal-list">
+                    <li><strong>LOCAL STORAGE ONLY:</strong> All financial data (transactions, accounts, budgets, categories, tags, vendors, custom fields) stored in encrypted Drift/SQLite database on YOUR device</li>
+                    <li><strong>NO SERVERS COLLECTING DATA:</strong> We have ZERO servers storing your personal or financial information</li>
+                    <li><strong>Database Encryption:</strong> Drift database with encryption at rest, secure storage in app sandbox</li>
+                    <li><strong>Optional Google Drive Backup:</strong> If enabled, encrypted backup stored in YOUR OWN Google Drive account (you control it, not us)</li>
+                    <li><strong>Biometric Security:</strong> Face ID/Touch ID data NEVER leaves device secure enclave - handled entirely by iOS/Android OS</li>
+                    <li><strong>Secure Preferences:</strong> App settings stored in encrypted SharedPreferences and Flutter Secure Storage</li>
+                    <li><strong>Access Controls:</strong> App lock, biometric authentication, privacy mode to hide sensitive information</li>
+                    <li><strong>On-Device AI (XpenseAI):</strong> Gemma AI models run entirely on your device - NO external AI services, NO cloud processing, NO data transmission</li>
+                    <li><strong>Attachment Security:</strong> Receipt photos and documents stored securely in local app storage</li>
+                    <li><strong>Session Management:</strong> Authentication tokens stored locally - no server-side session tracking</li>
+                    <li><strong>Complete Privacy:</strong> Even we cannot access your data - it exists only on your device or YOUR Google Drive</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>4. Third-Party Services</h2>
+                <p>We use the following third-party services that may collect information:</p>
+                
+                <h3>4.1 Google Services</h3>
+                <ul class="legal-list">
+                    <li><strong>Google Sign-in:</strong> Used ONLY to authenticate access to YOUR Google Drive for optional encrypted backups - we do NOT store your email, name, or Google account information on our servers</li>
+                    <li><strong>Google Drive API:</strong> If you enable backup feature, encrypted database backups stored in YOUR OWN Google Drive account (you have full control)</li>
+                    <li><strong>Firebase Analytics:</strong> Anonymous app usage statistics (feature usage, screens visited) - ONLY with your explicit consent in settings - NO personal or financial data transmitted</li>
+                    <li><strong>Firebase Core:</strong> Required for Firebase Analytics infrastructure - does NOT collect data by itself</li>
+                </ul>
+
+                <h3>4.2 Advertising & Monetization</h3>
+                <ul class="legal-list">
+                    <li><strong>Google AdMob:</strong> Displays advertisements within the app (ads do NOT have access to your financial data)</li>
+                    <li><strong>Ad Personalization:</strong> Can be controlled through device settings - based on device advertising ID, NOT your Xpense data</li>
+                    <li><strong>In-App Purchases:</strong> Premium subscriptions handled entirely by Apple App Store or Google Play Store</li>
+                    <li><strong>Payment Processing:</strong> We do NOT process or store payment information - all handled by App Store/Play Store</li>
+                    <li><strong>Subscription Status:</strong> Only subscription status (active/inactive) stored locally to enable premium features</li>
+                </ul>
+
+                <h3>4.3 AI Services (100% On-Device)</h3>
+                <ul class="legal-list">
+                    <li><strong>Gemma AI Models:</strong> Downloaded from Firebase Storage and run entirely on your device for financial insights</li>
+                    <li><strong>XpenseAI Features:</strong> Natural language queries, spending insights, budget recommendations - all processed locally</li>
+                    <li><strong>Voice Recording:</strong> If you use voice features, audio processed locally on device - NEVER sent to external servers</li>
+                    <li><strong>No External AI Services:</strong> We do NOT use OpenAI, ChatGPT, Claude, or any cloud-based AI services</li>
+                    <li><strong>Complete Privacy:</strong> Your financial conversations with AI stay on your device</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>5. Data Sharing and Disclosure</h2>
+                <div class="legal-highlight">
+                    <p><strong>We do not sell your personal information.</strong></p>
+                </div>
+                <p>We do not collect or store your personal information, therefore we have nothing to share or sell. Since all your data is on your device or in YOUR Google Drive:</p>
+                <ul class="legal-list">
+                    <li><strong>NO Data Collection:</strong> We do not collect your personal or financial data on our servers</li>
+                    <li><strong>NO Data Sharing:</strong> We have nothing to share - your data stays on your device</li>
+                    <li><strong>NO Data Selling:</strong> We will NEVER sell your data</li>
+                    <li><strong>Google Drive:</strong> If you enable backup, data goes to YOUR Google Drive (you control it)</li>
+                    <li><strong>Firebase Analytics:</strong> Only anonymous usage statistics (if you consent) - NO personal/financial data</li>
+                    <li><strong>Legal Requirements:</strong> If legally required, we can only provide what we have (which is minimal analytics data)</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>6. Your Rights and Choices</h2>
+                <p>You have the following rights regarding your data:</p>
+                
+                <h3>6.1 Access and Portability</h3>
+                <ul class="legal-list">
+                    <li>View all your data within the app</li>
+                    <li>Export your data in CSV, Excel, or PDF format</li>
+                    <li>Download a complete copy of your data</li>
+                </ul>
+
+                <h3>6.2 Correction and Deletion</h3>
+                <ul class="legal-list">
+                    <li>Edit or update your information at any time</li>
+                    <li>Delete individual transactions, accounts, or categories</li>
+                    <li>Request complete account deletion (see Data Deletion section)</li>
+                </ul>
+
+                <h3>6.3 Privacy Controls</h3>
+                <ul class="legal-list">
+                    <li><strong>Privacy Mode:</strong> Hide sensitive financial information from app screens (balance, amounts)</li>
+                    <li><strong>Analytics Opt-Out:</strong> Completely disable Firebase Analytics in app settings</li>
+                    <li><strong>Screenshot Protection:</strong> Prevent screenshots of sensitive financial data (optional)</li>
+                    <li><strong>Biometric Lock:</strong> Control biometric authentication settings</li>
+                    <li><strong>Ad Personalization:</strong> Control through device settings (Settings > Privacy > Advertising)</li>
+                    <li><strong>Notification Controls:</strong> Manage budget alerts, reminders, and notification preferences</li>
+                    <li><strong>Backup Control:</strong> Enable/disable Google Drive backup at any time</li>
+                    <li><strong>Permission Management:</strong> Review and revoke app permissions in device settings</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>7. App Permissions</h2>
+                <p>To provide our features, Xpense may request the following permissions. All are optional and used ONLY when you explicitly use features requiring them:</p>
+                
+                <h3>7.1 Camera</h3>
+                <ul class="legal-list">
+                    <li>Used to take photos of receipts and attach to transactions</li>
+                    <li>Photos stored ONLY on your device - never uploaded to servers</li>
+                </ul>
+
+                <h3>7.2 Storage/Files</h3>
+                <ul class="legal-list">
+                    <li>Used to save exported reports (CSV, Excel, PDF) to your device</li>
+                    <li>Used to import transaction data from files</li>
+                    <li>Used to attach documents to transactions</li>
+                </ul>
+
+                <h3>7.3 Notifications</h3>
+                <ul class="legal-list">
+                    <li>Send budget alerts when spending reaches thresholds</li>
+                    <li>Remind you of recurring transactions and bill payments</li>
+                    <li>All notification data processed locally</li>
+                </ul>
+
+                <h3>7.4 Internet</h3>
+                <ul class="legal-list">
+                    <li>ONLY for Google Drive backup sync (if you enable it)</li>
+                    <li>ONLY for Firebase Analytics (if you consent)</li>
+                    <li>ONLY for displaying AdMob ads</li>
+                    <li>NO financial data transmitted without your explicit consent</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>8. Cookies and Local Storage</h2>
+                <p>Xpense uses local storage mechanisms to store data on your device:</p>
+                <ul class="legal-list">
+                    <li><strong>SharedPreferences:</strong> App settings, user preferences, theme selection</li>
+                    <li><strong>Flutter Secure Storage:</strong> Authentication tokens, sensitive configuration data</li>
+                    <li><strong>Drift/SQLite Database:</strong> All your financial data (transactions, accounts, budgets, categories)</li>
+                    <li><strong>Local Files:</strong> Receipt photos, document attachments, exported reports</li>
+                    <li><strong>No Cookies:</strong> We do NOT use web cookies - this is a native mobile app</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>9. Data Retention</h2>
+                <p>Since ALL your data is stored LOCALLY on your device, <strong>WE DO NOT retain any of your personal or financial data on our servers</strong>. Your data remains on your device until you choose to delete it. If you uninstall the app without exporting your data or enabling Google Drive backup, it will be permanently deleted from your device.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>10. Children's Privacy (COPPA Compliance)</h2>
+                <p>Our app is not intended for children under 13 years of age. We do not knowingly collect personal information from children under 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us immediately to request deletion.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>11. International Users (GDPR Compliance)</h2>
+                <p>If you are located in the European Economic Area (EEA), you have additional rights under GDPR. Note: Since we have NO SERVERS storing your data, most GDPR rights are automatically satisfied:</p>
+                <ul class="legal-list">
+                    <li><strong>Right to Access:</strong> View all your data within the app at any time</li>
+                    <li><strong>Right to Rectification:</strong> Edit and correct your data directly in the app</li>
+                    <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Delete your data by uninstalling the app or using in-app deletion</li>
+                    <li><strong>Right to Data Portability:</strong> Export your data in CSV, Excel, or PDF format</li>
+                    <li><strong>Right to Object:</strong> Opt-out of Firebase Analytics in settings</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Disable analytics and backup features at any time</li>
+                    <li><strong>No Processing:</strong> Since we have no servers, we don't "process" your data - it stays on your device</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>12. California Privacy Rights (CCPA)</h2>
+                <p>California residents have specific rights under the California Consumer Privacy Act (CCPA). Note: Since we have NO SERVERS, most CCPA obligations are not applicable:</p>
+                <ul class="legal-list">
+                    <li><strong>Right to Know:</strong> This Privacy Policy discloses what minimal data we may collect (analytics only)</li>
+                    <li><strong>Right to Delete:</strong> Uninstall the app to delete all local data - we have no servers to delete from</li>
+                    <li><strong>Right to Opt-Out of Sale:</strong> We do NOT and will NEVER sell your data</li>
+                    <li><strong>Right to Non-Discrimination:</strong> We treat all users equally regardless of privacy choices</li>
+                    <li><strong>No Data Selling:</strong> Your financial data never leaves your device, so there's nothing to sell</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>13. Changes to Privacy Policy</h2>
+                <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. We will notify you of any material changes by:</p>
+                <ul class="legal-list">
+                    <li>Posting the updated Privacy Policy in the app with updated version number</li>
+                    <li>Updating the "Last Updated" date at the top</li>
+                    <li>Sending an in-app notification for significant changes</li>
+                    <li>Requesting your consent if required by law</li>
+                    <li>Your continued use of the app after changes constitutes acceptance</li>
+                </ul>
+            </div>
+
+            <div class="contact-box">
+                <h3>Contact Us</h3>
+                <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us:</p>
+                <p><strong>Email:</strong> support@xpense.in</p>
+                <p><strong>Note:</strong> We cannot access your app data. Your financial information is stored only on your device.</p>
+                <p><strong>Response Time:</strong> We respond within 24-48 hours</p>
+            </div>
+
+            <div class="legal-section">
+                <p><strong>Data Protection Officer:</strong> For GDPR-related inquiries, you may contact our Data Protection Officer at the email address above.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Standalone theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+        }
+
+        // Theme toggle handler
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+</body>
+</html>
