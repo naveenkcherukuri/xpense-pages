@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms of Service - Xpense</title>
+    <meta name="description" content="Terms of Service for Xpense - Understand your rights and responsibilities when using our app.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: #f9fafb;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+        body.dark-mode {
+            background: #111827;
+            color: #f9fafb;
+        }
+        .standalone-header {
+            background: white;
+            padding: 24px 0;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        body.dark-mode .standalone-header {
+            background: #1f2937;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+        }
+        .header-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-img {
+            width: 40px;
+            height: 40px;
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: 700;
+            color: #8B1538;
+        }
+        .theme-toggle {
+            background: transparent;
+            border: 2px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 8px 12px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        body.dark-mode .theme-toggle {
+            border-color: #374151;
+        }
+        .theme-toggle:hover {
+            background: #f3f4f6;
+        }
+        body.dark-mode .theme-toggle:hover {
+            background: #374151;
+        }
+        .sun-icon {
+            display: block;
+            color: #f59e0b;
+        }
+        body.dark-mode .sun-icon {
+            display: none;
+        }
+        .moon-icon {
+            display: none;
+            color: #60a5fa;
+        }
+        body.dark-mode .moon-icon {
+            display: block;
+        }
+        .legal-container {
+            max-width: 900px;
+            margin: 60px auto 60px;
+            padding: 0 24px;
+        }
+        .legal-header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+        .legal-title {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            color: #8B1538;
+        }
+        .legal-updated {
+            font-size: 16px;
+            color: #6b7280;
+            font-weight: 500;
+        }
+        .legal-content {
+            background: white;
+            border-radius: 24px;
+            padding: 48px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            line-height: 1.8;
+        }
+        body.dark-mode .legal-content {
+            background: #1f2937;
+        }
+        .legal-section {
+            margin-bottom: 32px;
+        }
+        .legal-section h2 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1f2937;
+        }
+        body.dark-mode .legal-section h2 {
+            color: #f9fafb;
+        }
+        .legal-section h3 {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            margin-top: 24px;
+            color: #374151;
+        }
+        body.dark-mode .legal-section h3 {
+            color: #e5e7eb;
+        }
+        .legal-section p {
+            color: #4b5563;
+            margin-bottom: 16px;
+        }
+        body.dark-mode .legal-section p {
+            color: #d1d5db;
+        }
+        .legal-list {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        .legal-list li {
+            color: #4b5563;
+            margin-bottom: 8px;
+            list-style-type: disc;
+        }
+        body.dark-mode .legal-list li {
+            color: #d1d5db;
+        }
+        .legal-highlight {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin: 24px 0;
+        }
+        body.dark-mode .legal-highlight {
+            background: #78350f;
+        }
+        .contact-box {
+            background: #8B1538;
+            color: white;
+            padding: 32px;
+            border-radius: 16px;
+            margin: 32px 0;
+        }
+        .contact-box h3 {
+            color: white;
+            margin-bottom: 16px;
+        }
+        .contact-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 8px;
+        }
+        .important-note {
+            background: #fee2e2;
+            border-left: 4px solid #ef4444;
+            padding: 16px 24px;
+            border-radius: 8px;
+            margin: 24px 0;
+        }
+        body.dark-mode .important-note {
+            background: #7f1d1d;
+        }
+    </style>
+</head>
+<body>
+    <!-- Standalone Header with Logo -->
+    <header class="standalone-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/xpense.png" alt="Xpense" class="logo-img">
+                <span class="logo-text">Xpense</span>
+            </div>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                    <line x1="12" y1="1" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="12" y1="21" x2="12" y2="23" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="1" y1="12" x2="3" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="21" y1="12" x2="23" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <div class="legal-container">
+        
+        <div class="legal-header">
+            <h1 class="legal-title">Terms of Service</h1>
+            <p class="legal-updated">Version 1.0 | Last Updated: October 10, 2025</p>
+        </div>
+
+        <div class="legal-content">
+            <div class="legal-section">
+                <h2>Agreement to Terms</h2>
+                <p>By accessing or using the Xpense mobile application ("App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree to these Terms, please do not use the App. <strong>IMPORTANT: Xpense is a LOCAL-FIRST app - ALL your financial data is stored ONLY on your device. We have NO SERVERS collecting your data.</strong></p>
+            </div>
+
+            <div class="legal-section">
+                <h2>1. Acceptance of Terms</h2>
+                <p>These Terms constitute a legally binding agreement between you ("User," "you," or "your") and Xpense ("we," "us," or "our"). By creating an account or using any features of the App, you acknowledge that you have read, understood, and agree to be bound by these Terms and our Privacy Policy.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>2. Eligibility</h2>
+                <p>You must be at least 13 years old to use this App. If you are under 18, you must have permission from a parent or legal guardian. By using the App, you represent and warrant that:</p>
+                <ul class="legal-list">
+                    <li>You are at least 13 years of age</li>
+                    <li>You have the legal capacity to enter into these Terms</li>
+                    <li>You will comply with all applicable laws and regulations</li>
+                    <li>You will not use the App for any unlawful purpose</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>3. Account Registration and Security</h2>
+                <p>To access certain features, you may need to create an account.</p>
+                
+                <h3>3.1 Account Creation</h3>
+                <ul class="legal-list">
+                    <li>You may register using Google Sign-in (used ONLY for optional Google Drive backup access)</li>
+                    <li>ALL your data is stored locally on your device - we have NO servers collecting your data</li>
+                    <li>Google Sign-in does NOT share your data with us - it only enables YOUR Google Drive backup</li>
+                    <li>You are responsible for maintaining the confidentiality of your device access and biometric authentication</li>
+                    <li>You must notify us immediately of any unauthorized access to your device</li>
+                </ul>
+
+                <h3>3.2 Account Responsibilities</h3>
+                <ul class="legal-list">
+                    <li>You are solely responsible for all activities under your account</li>
+                    <li>You must not share your account credentials with others</li>
+                    <li>You must keep your contact information up to date</li>
+                    <li>You must use strong passwords and enable security features</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>4. Acceptable Use</h2>
+                <p>You agree to use the App only for lawful purposes and in accordance with these Terms.</p>
+                
+                <h3>4.1 Permitted Uses</h3>
+                <ul class="legal-list">
+                    <li>Personal expense tracking with unlimited transactions, accounts, categories, tags, and vendors</li>
+                    <li>Creating and monitoring budgets with custom periods (monthly/quarterly/yearly) and alert thresholds (50-95%)</li>
+                    <li>Managing recurring transactions (daily/weekly/monthly/yearly) with reminders</li>
+                    <li>Attaching photos, receipts, and documents to transactions (stored locally)</li>
+                    <li>Using XpenseAI for financial insights (100% on-device AI - your data never leaves your device)</li>
+                    <li>Exporting your data (CSV, Excel, PDF) and backing up to YOUR OWN Google Drive</li>
+                    <li>Securing app access with biometric authentication (Face ID/Touch ID)</li>
+                    <li>Using privacy mode to hide sensitive financial information</li>
+                </ul>
+
+                <h3>4.2 Prohibited Uses</h3>
+                <p>You agree NOT to:</p>
+                <ul class="legal-list">
+                    <li>Use the App for any illegal or unauthorized purpose</li>
+                    <li>Violate any laws, regulations, or third-party rights</li>
+                    <li>Attempt to reverse engineer, decompile, or disassemble the App</li>
+                    <li>Introduce viruses, malware, or other harmful code</li>
+                    <li>Attempt to gain unauthorized access to our systems</li>
+                    <li>Interfere with or disrupt the App's functionality</li>
+                    <li>Use automated systems (bots, scrapers) to access the App</li>
+                    <li>Impersonate any person or entity</li>
+                    <li>Harass, abuse, or harm other users</li>
+                    <li>Use the App to transmit spam or unsolicited communications</li>
+                    <li>Collect or harvest user information without consent</li>
+                    <li>Use the App for commercial purposes without authorization</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>5. Intellectual Property Rights</h2>
+                <p>All content, features, and functionality of the App are owned by Xpense and are protected by intellectual property laws.</p>
+                
+                <h3>5.1 Our Intellectual Property</h3>
+                <ul class="legal-list">
+                    <li>App design, code, and architecture</li>
+                    <li>Trademarks, logos, and brand elements</li>
+                    <li>Text, graphics, images, and icons</li>
+                    <li>AI models and algorithms</li>
+                    <li>Documentation and tutorials</li>
+                </ul>
+
+                <h3>5.2 Your Content</h3>
+                <ul class="legal-list">
+                    <li>You retain 100% ownership of your financial data - it is stored ONLY on your device</li>
+                    <li>We have NO ACCESS to your financial data - it never leaves your device except to YOUR Google Drive</li>
+                    <li>You do NOT grant us any license to your data - we cannot see it or use it</li>
+                    <li>You are solely responsible for the accuracy and backup of your data</li>
+                    <li>Receipt photos and attachments are stored locally on your device</li>
+                    <li>If you uninstall the app without backup, your local data is permanently deleted</li>
+                </ul>
+
+                <h3>5.3 License Grant</h3>
+                <p>We grant you a limited, non-exclusive, non-transferable, revocable license to use the App for personal, non-commercial purposes, subject to these Terms.</p>
+            </div>
+
+            <div class="legal-section">
+                <h2>6. Financial Disclaimer</h2>
+                <div class="important-note">
+                    <p><strong>IMPORTANT:</strong> Xpense is a personal finance management tool and should not be considered as professional financial advice.</p>
+                </div>
+                <ul class="legal-list">
+                    <li>The App provides tools for tracking expenses, managing budgets, and analyzing spending patterns</li>
+                    <li>We do not provide financial, investment, tax, accounting, or legal advice</li>
+                    <li>XpenseAI insights are for informational purposes only - generated by on-device AI models</li>
+                    <li>Budget recommendations and spending forecasts are estimates based on your historical data</li>
+                    <li>You should consult qualified professionals (financial advisors, accountants, tax professionals) for financial decisions</li>
+                    <li>We are not responsible for financial decisions you make based on app data or AI insights</li>
+                    <li>Data accuracy depends entirely on the information you manually input</li>
+                    <li>We do not guarantee the accuracy of budget calculations, spending projections, or AI-generated insights</li>
+                    <li>We are not liable for any financial losses resulting from use of the app</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>7. Third-Party Services</h2>
+                <p>The App integrates with third-party services. You agree to comply with their respective terms of service:</p>
+                <ul class="legal-list">
+                    <li><strong>Google Sign-in:</strong> Used ONLY to authenticate access to YOUR Google Drive for optional backups</li>
+                    <li><strong>Google Drive API:</strong> Optional encrypted backups stored in YOUR OWN Google Drive account</li>
+                    <li><strong>Firebase Analytics:</strong> Anonymous usage statistics (ONLY with your consent) - NO financial data transmitted</li>
+                    <li><strong>Google AdMob:</strong> Displays advertisements (ads do NOT have access to your financial data)</li>
+                    <li><strong>Apple App Store / Google Play Store:</strong> Processes subscription payments for premium features</li>
+                    <li><strong>Gemma AI:</strong> On-device AI models that run entirely on your device - NO external AI services</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>8. Data and Privacy</h2>
+                <div class="legal-highlight">
+                    <p><strong>IMPORTANT: Xpense uses a ZERO-SERVER architecture. ALL your financial data is stored ONLY on your device.</strong></p>
+                </div>
+                <p>Your use of the App is subject to our <a href="privacy-policy.html" style="color: #667eea;">Privacy Policy</a>, which is incorporated into these Terms by reference. Key privacy principles:</p>
+                <ul class="legal-list">
+                    <li><strong>Local Storage:</strong> All transactions, accounts, budgets, categories stored ONLY on your device</li>
+                    <li><strong>No Servers:</strong> We have NO SERVERS collecting your personal or financial data</li>
+                    <li><strong>On-Device AI:</strong> XpenseAI processes your data entirely on your device - never sent to external servers</li>
+                    <li><strong>Optional Backup:</strong> If enabled, encrypted data goes to YOUR OWN Google Drive (not our servers)</li>
+                    <li><strong>Zero Data Access:</strong> Even we cannot access your financial data - it is on your device</li>
+                    <li><strong>Biometric Security:</strong> Face ID/Touch ID data never leaves your device secure enclave</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>9. Subscription and Payments</h2>
+                <p>The App may offer premium features through in-app purchases or subscriptions.</p>
+                
+                <h3>9.1 Free Features</h3>
+                <ul class="legal-list">
+                    <li>Basic expense tracking is available for free</li>
+                    <li>Core features are accessible without payment</li>
+                </ul>
+
+                <h3>9.2 Premium Features</h3>
+                <ul class="legal-list">
+                    <li>Premium features may be unlocked through in-app purchases or subscriptions</li>
+                    <li>All payments are processed by Apple App Store or Google Play Store - we do NOT process payments</li>
+                    <li>We do NOT store your payment information - handled entirely by app stores</li>
+                    <li>Subscription status (active/inactive) is stored locally on your device</li>
+                    <li>Prices are in your local currency and may vary by region</li>
+                    <li>Subscriptions auto-renew unless cancelled through your app store account</li>
+                </ul>
+
+                <h3>9.3 Refund Policy</h3>
+                <ul class="legal-list">
+                    <li>Refunds are handled by Apple App Store or Google Play Store</li>
+                    <li>Please contact the respective app store for refund requests</li>
+                    <li>We do not have direct control over refund processing</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>10. Advertisements</h2>
+                <p>The free version of the App displays advertisements powered by Google AdMob:</p>
+                <ul class="legal-list">
+                    <li>Ads are displayed within the app to support free features</li>
+                    <li>Ads do NOT have access to your financial data stored in the app</li>
+                    <li>Ad personalization is based on device advertising ID, NOT your Xpense financial data</li>
+                    <li>You can control ad personalization through your device settings</li>
+                    <li>Premium subscriptions may offer ad-free experience</li>
+                    <li>We are not responsible for third-party ad content</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>11. Disclaimers and Limitations of Liability</h2>
+                <div class="legal-highlight">
+                    <p><strong>TO THE MAXIMUM EXTENT PERMITTED BY LAW:</strong></p>
+                </div>
+                
+                <h3>11.1 Disclaimer of Warranties</h3>
+                <p>THE APP IS PROVIDED "AS IS" AND "AS AVAILABLE" WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR IMPLIED.</p>
+
+                <h3>11.2 Limitation of Liability</h3>
+                <p>WE SHALL NOT BE LIABLE FOR ANY:</p>
+                <ul class="legal-list">
+                    <li>Indirect, incidental, special, consequential, or punitive damages</li>
+                    <li>Loss of profits, revenue, data, or use</li>
+                    <li>Business interruption or loss of opportunities</li>
+                    <li>Personal injury or property damage</li>
+                    <li>Damages arising from your use or inability to use the App</li>
+                    <li>Damages arising from unauthorized access to your data</li>
+                    <li>Damages arising from errors, bugs, or technical issues</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>12. Indemnification</h2>
+                <p>You agree to indemnify, defend, and hold harmless Xpense, its officers, directors, employees, and agents from any claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
+                <ul class="legal-list">
+                    <li>Your use or misuse of the App</li>
+                    <li>Your violation of these Terms</li>
+                    <li>Your violation of any rights of third parties</li>
+                    <li>Your violation of applicable laws or regulations</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>13. Data Backup and Loss</h2>
+                <div class="legal-highlight">
+                    <p><strong>IMPORTANT: Since all data is stored ONLY on your device, you are responsible for data backup and protection.</strong></p>
+                </div>
+                <ul class="legal-list">
+                    <li><strong>Local Storage:</strong> All data is stored on your device using encrypted Drift/SQLite database</li>
+                    <li><strong>Your Responsibility:</strong> You are solely responsible for maintaining backups of your financial data</li>
+                    <li><strong>Export Options:</strong> We recommend regularly exporting data (CSV, Excel, PDF) for safekeeping</li>
+                    <li><strong>Optional Google Drive:</strong> Enable encrypted backup to YOUR OWN Google Drive for automatic backups</li>
+                    <li><strong>Device Loss Risk:</strong> If you lose your device or uninstall the app without backup, data is PERMANENTLY lost</li>
+                    <li><strong>Device Reset:</strong> Factory resetting your device will delete all app data</li>
+                    <li><strong>No Server Recovery:</strong> We have NO SERVERS storing your data - we cannot recover lost data</li>
+                    <li><strong>No Liability:</strong> We are not liable for data loss due to device failure, theft, reset, or uninstallation</li>
+                    <li><strong>Sync Limitations:</strong> There is no multi-device automatic sync - backup/restore manually via Google Drive or export/import</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>14. Termination</h2>
+                <p>We reserve the right to suspend or terminate your access to the App at any time, with or without notice, for any reason, including:</p>
+                <ul class="legal-list">
+                    <li>Violation of these Terms</li>
+                    <li>Fraudulent or illegal activity</li>
+                    <li>Requests by law enforcement</li>
+                    <li>Extended periods of inactivity</li>
+                    <li>Technical or security reasons</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>15. Changes to Terms</h2>
+                <p>We reserve the right to modify these Terms at any time. We will notify you of material changes by:</p>
+                <ul class="legal-list">
+                    <li>Posting updated Terms in the App</li>
+                    <li>Updating the "Last Updated" date</li>
+                    <li>Sending in-app notifications</li>
+                    <li>Requiring acceptance of new Terms for continued use</li>
+                </ul>
+            </div>
+
+            <div class="legal-section">
+                <h2>16. Governing Law and Jurisdiction</h2>
+                <p>These Terms shall be governed by and construed in accordance with the laws of India, without regard to conflict of law principles. Any disputes arising from these Terms or the use of the App shall be subject to the exclusive jurisdiction of the courts in India.</p>
+            </div>
+
+            <div class="contact-box">
+                <h3>Contact Information</h3>
+                <p>If you have any questions about these Terms, please contact us:</p>
+                <p><strong>Email:</strong> support@xpense.in</p>
+                <p><strong>Address:</strong> Xpense App, Your Address Here, City, State, ZIP</p>
+            </div>
+
+            <div class="legal-section">
+                <div class="important-note">
+                    <p><strong>ACKNOWLEDGMENT:</strong> BY USING THE APP, YOU ACKNOWLEDGE THAT YOU HAVE READ THESE TERMS, UNDERSTOOD THEM, AND AGREE TO BE BOUND BY THEM.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Standalone theme toggle functionality
+        const themeToggle = document.getElementById('theme-toggle');
+        const body = document.body;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        if (currentTheme === 'dark') {
+            body.classList.add('dark-mode');
+        }
+
+        // Theme toggle handler
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const theme = body.classList.contains('dark-mode') ? 'dark' : 'light';
+            localStorage.setItem('theme', theme);
+        });
+    </script>
+</body>
+</html>
